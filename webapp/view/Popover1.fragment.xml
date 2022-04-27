@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.検証2.controller.Popover1" xmlns="sap.m">
+    <ResponsivePopover contentHeight="350px" contentWidth="250px" horizontalScrolling="true" modal="true" offsetX="0" offsetY="0" placement="Right" showHeader="false" title="Title" verticalScrolling="true" visible="true" showCloseButton="true" afterOpen="_onResponsivePopoverAfterOpen">
+        <content/>
+        <beginButton/>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </ResponsivePopover>
+</core:FragmentDefinition>

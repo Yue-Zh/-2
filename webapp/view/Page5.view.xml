@@ -1,0 +1,53 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.検証2.controller.Page5" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="41px" top="91px">
+                        <layout:control>
+                            <Button text="" type="Default" icon="sap-icon://complete" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="666" iconDensityAware="false" class="sapUiSmallMarginTop sapUiLargeMarginBottom sapUiLargeMarginBegin sapUiSmallMarginEnd" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="27px" top="23px">
+                        <layout:control>
+                            <Link href="https://experience.sap.com/fiori-design-web/whats-new/" text="参照" textAlign="Center" width="500px" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="true" subtle="true" class="sapUiTinyMargin" press="_onLinkPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="245px" top="198px">
+                        <layout:control>
+                            <ToggleButton pressed="true" text="Button" iconFirst="true" width="auto" enabled="true" visible="true" tooltip="666" press="_onToggleButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="258px" top="324px">
+                        <layout:control>
+                            <SegmentedButton width="auto" enabled="true" visible="true">
+                                <items>
+                                    <SegmentedButtonItem icon="sap-icon://taxi" text="Button" width="auto" enabled="true"/>
+                                    <SegmentedButtonItem icon="sap-icon://lab" text="Button" width="auto" enabled="true"/>
+                                    <SegmentedButtonItem icon="sap-icon://competitor" text="Button" width="auto" enabled="true"/>
+                                </items>
+                            </SegmentedButton>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="55px" top="238px">
+                        <layout:control>
+                            <core:Icon width="100px" height="100px" backgroundColor="{applicationModel>/hotspotInfo/color}" press="_onHotspotPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

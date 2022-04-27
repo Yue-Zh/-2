@@ -1,0 +1,25 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="-API_BANKDETAIL_SRV" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="-API_BANKDETAIL_SRV_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="A_BankDetail" EntityType="-API_BANKDETAIL_SRV.A_BankDetailType" sap:creatable="false" sap:updatable="false" sap:deletable="false"/>
+            </EntityContainer>
+            <EntityType Name="A_BankDetailType">
+                <Key>
+                    <PropertyRef Name="BankCountry"/>
+                    <PropertyRef Name="BankInternalID"/>
+                </Key>
+                <Property Name="BankCountry" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="3" sap:label="Bank Country"/>
+                <Property Name="BankInternalID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="15" sap:label="Bank Key"/>
+                <Property Name="BankGroup" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="2" sap:label="Bank group"/>
+                <Property Name="BankName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="60" sap:label="Bank Name"/>
+                <Property Name="BankNumber" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="15" sap:label="Bank Number"/>
+                <Property Name="Branch" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="40" sap:label="Bank Branch"/>
+                <Property Name="CityName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="35" sap:label="City"/>
+                <Property Name="Region" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="3" sap:label="Region"/>
+                <Property Name="SWIFTCode" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="11" sap:label="SWIFT/BIC"/>
+                <Property Name="StreetName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" MaxLength="35" sap:label="Street"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
